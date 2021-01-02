@@ -7,8 +7,6 @@ numbers = []
 for number in range(1, 101):
   numbers.append(number)
 
-#randomly selected computer number
-selected_number = random.choice(numbers)
 
 #Created a funtion that would compare the numbers and print a statement
 def compare_numbers(computer_number, user_number):
@@ -24,6 +22,8 @@ def compare_numbers(computer_number, user_number):
 def guess_the_number():
   print(logo)
   print("Welcome to the Number Guessing Game!\nI'm thinking of a number between 1 and 100")
+  #randomly selected computer number
+  selected_number = random.choice(numbers)
   difficulty = input("Choose a difficulty. Type 'easy' or 'hard': ")
   if difficulty == "easy":
     lives = 10
